@@ -1,0 +1,35 @@
+.tabla {
+    width: 100%;
+    min-height: 70vh;
+    margin-top:8%;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+
+    .title{
+        color: #1b1b1b;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+
+        .registro{
+            background-color: #363740;
+            margin-left: 50%;
+        }
+    }
+    .headers {
+        font-size: 18px;
+        font-weight: bold;
+        color: #2f2f2f;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tabla{
+        margin-top: 120px;
+    }
+    #modal1, #modal2, #modal3{
+        height: 100%;
+        width: 90%;
+    }
+}

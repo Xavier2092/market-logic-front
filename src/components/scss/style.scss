@@ -1,0 +1,186 @@
+.formContainer{
+    background: white;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    min-width: 300px;
+    width: 30%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        font-size: 30px;
+        font-weight: bolder;
+        color: #A4A6B3;
+        text-align: center;
+    }
+
+    form{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .inputContainer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ececec;
+            padding: 10px 15px;
+            border-radius: 8px;
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                width: 80%;
+
+                label{
+                    font-size: 11px;
+                    color: #9FA2B4;
+                }
+
+                input{
+                    border: none;
+                    font-weight: bold;
+                    background: inherit;
+                    font-size: 13px;
+                    color: #2f2f2f;
+                }
+            }
+        }
+
+        button{
+            margin-top: 10px;
+            border: none;
+            width: 100%;
+            padding: 10px 0;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+            background: #3751FF;
+            border-radius: 8px;
+            transition-duration: .3s;
+        }
+
+        button:hover{
+            background: #3751FFd6;
+        }
+
+        p{
+            text-align: center;
+            font-size: 12px;
+
+            b{
+                cursor: pointer;
+                color: #3751FF;
+            }
+
+            b:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+
+.toast{
+    transition-duration: .3s;
+    background: #3751FF75;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-top: 10%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.welcome{
+    width: auto;
+    padding: 35px 75px;
+    background: whtie;
+    border-radius: 8px;
+    text-align: center;
+
+    h2{
+        font-weight: bold;
+        color: #3751FF;
+        font-size: 25px;
+    }
+
+    h3{
+        font-weight: normal;
+        color: #2f2f2f;
+    }
+
+
+
+        button{
+            background: #3751FF;
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 3px;
+            transition-duration: .3s;
+        }
+
+        button:hover{
+            background: #3751FFd6;
+        }
+    
+}
+
+.header{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .logo{
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        margin-right: 2%;
+        color: #534e4e;
+    }
+
+    .logout{
+        cursor: pointer;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-top: 1.5%;
+        margin-right: 2%;
+        color: #534e4e;
+    }
+
+    .toastLogout{
+        color: #ffffff;
+        text-shadow: #121213 0px 0px 10px;
+        opacity: 0.5;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50%;
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .formContainer{
+        width: 98%;
+    }
+    .welcome{
+        padding: 0;
+    }
+    .formContainer{
+        height: 90vh;
+    }
+}
