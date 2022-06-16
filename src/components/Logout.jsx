@@ -9,10 +9,10 @@ const Logout = () => {
   const [mensaje, setMensaje] = useState();
 
   const onSubmit = async () => {
-    const baseUrl = 'http://localhost:3000/login';
+    const baseUrl = 'https://market-logic-front.vercel.app/login';
     setLoading(true)
     await axios
-      .get('http://localhost:4000/logout')
+      .get('https://marketlogic-back.herokuapp.com/logout')
       .then(({data}) => {
         setMensaje('Cerrando sesión...');
         localStorage.removeItem('token');

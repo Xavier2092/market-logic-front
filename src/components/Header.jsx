@@ -12,7 +12,7 @@ const Header= ()=> {
     useEffect(()=> {
       if(token){
         axios
-        .get(`http://localhost:4000/user`, {
+        .get(`https://marketlogic-back.herokuapp.com/user`, {
           headers: {
             token
           }

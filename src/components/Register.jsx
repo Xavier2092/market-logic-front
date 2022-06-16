@@ -35,7 +35,7 @@ const Register = () => {
       };
       setLoading(true);
       await axios
-        .post('http://localhost:4000/register', Usuario)
+        .post('https://marketlogic-back.herokuapp.com/register', Usuario)
         .then(({data})=> {
           setMensaje(data.mensaje);
           setInputs({ nombre: '', correo: '', contraseña: '' });

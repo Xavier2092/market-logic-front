@@ -6,7 +6,7 @@ import { Table, TableContainer, TableHead, TableCell, TableBody, TableRow, Modal
 import { Edit, Delete } from '@material-ui/icons';
 import { red } from '@mui/material/colors';
 
-const baseUrl = 'http://localhost:4000/clientes/'
+const baseUrl = 'https://marketlogic-back.herokuapp.com/clientes/'
 
 const useStyles = makeStyles((theme) => ({
     modal: {
